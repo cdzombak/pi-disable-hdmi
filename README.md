@@ -1,10 +1,10 @@
 # pi-disable-hdmi
 
-This is a simple Debian package which, installed on a Raspberry Pi, disables its HDMI output. The change will persist after a reboot.
+This is a Debian package which, installed on a Raspberry Pi, disables its HDMI output. The change will persist after a reboot.
 
 ## Note
 
-Installation will switch your Pi to the "Original non-DL desktop driver." This is required to use the underlying `/opt/vc/bin/tvservice` tool to disable HDMI.
+Installation will switch your Pi to the "Original non-GL desktop driver." This is required to use the underlying `/opt/vc/bin/tvservice` tool to disable HDMI.
 
 After uninstallation, the driver is not switched back automatically; to switch to it, run `raspi-config` and navigate to "Advanced Options > GL Driver."
 
