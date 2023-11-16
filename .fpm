@@ -1,0 +1,13 @@
+-s dir
+--name pi-disable-hdmi
+--description "Disable Raspberry Pi HDMI output"
+--url "https://github.com/cdzombak/pi-disable-hdmi"
+--maintainer "Chris Dzombak <https://www.dzombak.com>"
+--license "Unlicense"
+-t deb
+-d gldriver-test
+-d libgl1-mesa-dri
+-a all
+--before-remove pre-remove.sh
+--after-remove post-remove.sh
+--after-install post-install.sh
